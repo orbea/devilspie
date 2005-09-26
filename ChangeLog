@@ -1,5 +1,10 @@
 2005-09-26  Ross Burton  <ross@burtonini.com>
 
+	* src/xutils.c:
+	Fix type alias warnings.
+
+2005-09-26  Ross Burton  <ross@burtonini.com>
+
 	* src/Makefile.am:
 	Use WARN_CFLAGS instead of -Wall.
 
