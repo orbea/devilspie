@@ -10,10 +10,10 @@ TESTS = parser-test
 
 devilspie_SOURCES = \
 	${BUILT_SOURCES} \
+	config-parser.h \
 	config-parser.c \
 	flurb.h \
 	flurb.c \
-	devilspie.h \
 	devilspie.c \
 	xutils.h \
 	xutils.c
@@ -28,12 +28,12 @@ doc_generator_SOURCES = \
 
 parser_test_SOURCES = \
 	${BUILT_SOURCES} \
+	config-parser.h \
 	config-parser.c \
 	flurb.h \
 	flurb.c \
 	xutils.h \
 	xutils.c \
-	devilspie.h \
 	parser-test.c
 
 INCLUDES = \
