@@ -1,5 +1,11 @@
 2005-09-26  Ross Burton  <ross@burtonini.com>
 
+	* configure.in:
+	* NEWS:
+	Version 0.12.
+
+2005-09-26  Ross Burton  <ross@burtonini.com>
+
 	* src/devilspie-matcher-windowname.gob:
 	Make private functions static.
 
