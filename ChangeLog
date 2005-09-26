@@ -1,5 +1,10 @@
 2005-09-26  Ross Burton  <ross@burtonini.com>
 
+	* src/devilspie-matcher-windowname.gob:
+	Make private functions static.
+
+2005-09-26  Ross Burton  <ross@burtonini.com>
+
 	* src/xutils.c:
 	Fix type alias warnings.
 

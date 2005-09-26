@@ -9,7 +9,7 @@
 %}
 
 %{
-void regexpr_free(regex_t *reg_expr)
+static void regexpr_free(regex_t *reg_expr)
 {
   if (reg_expr) {
     regfree(reg_expr);
@@ -17,7 +17,7 @@ void regexpr_free(regex_t *reg_expr)
   }
 }
   
-void regexpr_init(regex_t **reg_expr, const GValue *str_val)
+static void regexpr_init(regex_t **reg_expr, const GValue *str_val)
 {
   const gchar *str;
   int res;
@@ -42,7 +42,7 @@ void regexpr_init(regex_t **reg_expr, const GValue *str_val)
   }
 }
 
-gboolean regexpr_match(regex_t *reg_expr, const gchar *str)
+static gboolean regexpr_match(regex_t *reg_expr, const gchar *str)
 {
   return (regexec(reg_expr, str, 0, NULL, 0) == 0) ? TRUE : FALSE;
 }
