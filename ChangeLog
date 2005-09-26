@@ -1,6 +1,11 @@
 2005-09-26  Ross Burton  <ross@burtonini.com>
 
 	* src/Makefile.am:
+	Use WARN_CFLAGS instead of -Wall.
+
+2005-09-26  Ross Burton  <ross@burtonini.com>
+
+	* src/Makefile.am:
 	* src/devilspie.c:
 	Re-arrange defines, rename LOCALEDIR.
 
