@@ -3,24 +3,24 @@
 # This file is distributed under the same license as the devilspie package.
 # Christian Neumair <chris@gnome-de.org>, 2002.
 # Hendrik Richter <hendi@gnome-de.org>, 2005.
-# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
 #
 # Matcher = Bedingung
 # Role = Rolle
 # Pin = Auf alle Arbeitsflächen legen
 # array  =  Feld
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: devilspie CVS (HEAD)\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=devilspie&component=general\n"
-"POT-Creation-Date: 2009-08-01 19:10+0000\n"
-"PO-Revision-Date: 2009-10-17 23:13+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-21 23:48+0100\n"
+"PO-Revision-Date: 2010-03-21 23:49+0100\n"
 "Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
-"Language-Team: German <gnome-de@gnome.org>\n"
+"Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../src/actions.c:46
 #, c-format
@@ -208,12 +208,12 @@ msgstr "Umschalter übergehen\n"
 #: ../src/actions.c:556
 #, c-format
 msgid "Setting above\n"
-msgstr ""
+msgstr "Darüber setzen\n"
 
 #: ../src/actions.c:569
 #, c-format
 msgid "Setting below\n"
-msgstr ""
+msgstr "Darunter setzen\n"
 
 #: ../src/actions.c:612
 #, c-format
