@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: devilspie\n"
+"Project-Id-Version: devilspie master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=devilspie&component=general\n"
 "POT-Creation-Date: 2009-10-19 20:26+0000\n"
-"PO-Revision-Date: 2010-02-04 19:12+0100\n"
+"PO-Revision-Date: 2010-06-03 14:54+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: ../src/actions.c:46
 #, c-format
 msgid "Window Title: '%s'; Application Name: '%s'; Class: '%s'; Geometry: %dx%d+%d+%d\n"
-msgstr "Naslov okna: '%s'; Ime programa: '%s', Razred: '%s', Geometrija: %dx%d+%d+%d\n"
+msgstr "Naslov okna: '%s'; ime programa: '%s', razred: '%s', geometrija: %dx%d+%d+%d\n"
 
 #: ../src/actions.c:90
 #, c-format
@@ -48,27 +48,27 @@ msgstr "Nastavljanje geometrije '%s'\n"
 #: ../src/actions.c:243
 #, c-format
 msgid "Cannot get workspace\n"
-msgstr "Ni mogoče dobiti delovne površine\n"
+msgstr "Ni mogoče pridobiti delovne površine\n"
 
 #: ../src/actions.c:261
 #, c-format
 msgid "Centering '%s' failed\n"
-msgstr "Središčenje '%s' je spodletelo\n"
+msgstr "Postavljanje v središče '%s' je spodletelo\n"
 
 #: ../src/actions.c:266
 #, c-format
 msgid "Centering\n"
-msgstr "Središčenje\n"
+msgstr "Postavljanje v središče\n"
 
 #: ../src/actions.c:276
 #, c-format
 msgid "Setting fullscreen\n"
-msgstr "Nastavljanje celega zaslona\n"
+msgstr "Nastavljanje celozaslonskega načina\n"
 
 #: ../src/actions.c:286
 #, c-format
 msgid "Unsetting fullscreen\n"
-msgstr "Odstranitev nastavitve celega zaslona\n"
+msgstr "Odstranitev nastavitve celozaslonskega načina\n"
 
 #: ../src/actions.c:299
 #, c-format
@@ -78,7 +78,7 @@ msgstr "V žarišču\n"
 #: ../src/actions.c:308
 #, c-format
 msgid "Maximising\n"
-msgstr "Povečevanje\n"
+msgstr "Razpenjanje\n"
 
 #: ../src/actions.c:317
 #, c-format
@@ -98,7 +98,7 @@ msgstr "Pomanjševanje\n"
 #: ../src/actions.c:344
 #, c-format
 msgid "Minimising\n"
-msgstr "Zmanjševanje\n"
+msgstr "Skrčenje\n"
 
 #: ../src/actions.c:357
 #, c-format
@@ -179,17 +179,17 @@ msgstr "set_viewport zahteva število večje od 0\n"
 #: ../src/actions.c:510
 #, c-format
 msgid "could not find current viewport\n"
-msgstr "Ni mogoče najti trenutnega območja pogleda\n"
+msgstr "Ni mogoče najti trenutnega vidnega polja\n"
 
 #: ../src/actions.c:521
 #, c-format
 msgid "Setting viewport failed\n"
-msgstr "Nastavljanje območja pogleda je spodletelo\n"
+msgstr "Nastavljanje vidnega polja je spodletelo\n"
 
 #: ../src/actions.c:525
 #, c-format
 msgid "Changing viewport to %d\n"
-msgstr "Spreminjanje območja pogleda v %d\n"
+msgstr "Spreminjanje vidnega polja v %d\n"
 
 #: ../src/actions.c:534
 #, c-format
@@ -264,7 +264,7 @@ msgstr "spawn_sync(niz)\n"
 #: ../src/actions.c:727
 #, c-format
 msgid "spawn_sync: Command parameter is not a string"
-msgstr "spawn_sync: Parameter ukaza ni niz"
+msgstr "spawn_sync: parameter ukaza ni niz"
 
 #: ../src/actions.c:740
 #, c-format
@@ -274,7 +274,7 @@ msgstr "spawn_sync(seznam)\n"
 #: ../src/actions.c:747
 #, c-format
 msgid "spawn_sync: Command parameter %d is not a string"
-msgstr "spawn_sync: Parameter ukaza %d ni niz"
+msgstr "spawn_sync: parameter ukaza %d ni niz"
 
 #: ../src/actions.c:764
 #, c-format
@@ -337,7 +337,7 @@ msgstr "Uporabi za vsa obstoječa okna namesto samo novih oken."
 
 #: ../src/devilspie.c:103
 msgid "Output debug information"
-msgstr "Podrobnosti izhoda razroščevanja"
+msgstr "Podrobnosti izhoda razhroščevanja"
 
 #: ../src/devilspie.c:104
 msgid "Configuration files to use"
@@ -417,7 +417,7 @@ msgstr "Neveljavna oblika za vrednost celega števila"
 #: ../src/e-sexp.c:924
 #: ../src/e-sexp.c:932
 msgid "Invalid format for a boolean value"
-msgstr "Neveljavna oblika za vrednost boolean "
+msgstr "Neveljavna oblika za logično vrednost boolean "
 
 #: ../src/e-sexp.c:955
 #, c-format
@@ -457,12 +457,12 @@ msgstr "vnos enakosti zahteva argumente v dveh nizih\n"
 #: ../src/logical.c:55
 #, c-format
 msgid "contains expects two string arguments\n"
-msgstr "vnos vsebovanja zahteva argumente v dveh nizihv\n"
+msgstr "vnos vsebovanja zahteva argumente v dveh nizih\n"
 
 #: ../src/logical.c:76
 #, c-format
 msgid "matches expects two string arguments\n"
-msgstr "vnos skladnje zahteva argumente v dveh nizihv\n"
+msgstr "vnos skladnje zahteva argumente v dveh nizih\n"
 
 #: ../src/logical.c:87
 #, c-format
@@ -483,7 +483,7 @@ msgstr "Nalaganje %s\n"
 #: ../src/parser.c:109
 #, c-format
 msgid "%s is not a normal file, skipping\n"
-msgstr "%s ni običajna datoteka, datoteka je izpuščena\n"
+msgstr "%s ni običajna datoteka, zato je izpuščena\n"
 
 #: ../src/parser.c:115
 #, c-format
@@ -509,4 +509,3 @@ msgstr "%s ni mapa\n"
 #, c-format
 msgid "Cannot open %s: %s\n"
 msgstr "Ni mogoče odpreti %s: %s\n"
-
