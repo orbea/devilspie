@@ -205,7 +205,7 @@ ESExpResult *func_geometry(ESExp *f, int argc, ESExpResult **argv, Context *c) {
 
   /* try to set new position.. */
   my_wnck_error_trap_push ();
-  XMoveResizeWindow (gdk_display,
+  XMoveResizeWindow (gdk_x11_get_default_xdisplay (),
                      wnck_window_get_xid (c->window),
                      new_xoffset, new_yoffset,
                      new_width, new_height);
@@ -253,7 +253,7 @@ ESExpResult *func_center(ESExp *f, int argc, ESExpResult **argv, Context *c) {
 
   /* Try to set new position.. */
   my_wnck_error_trap_push ();
-  XMoveWindow (gdk_display,
+  XMoveWindow (gdk_x11_get_default_xdisplay (),
                wnck_window_get_xid (c->window),
                xoffset, yoffset);
 
@@ -514,7 +514,7 @@ ESExpResult *func_set_viewport(ESExp *f, int argc, ESExpResult **argv, Context *
   x = ((num - 1) * wnck_screen_get_width (screen)) - viewport_start + x;
 
   my_wnck_error_trap_push ();
-  XMoveResizeWindow (gdk_display,
+  XMoveResizeWindow (gdk_x11_get_default_xdisplay (),
                      wnck_window_get_xid (c->window),
                      x, y, width, height);
   if (my_wnck_error_trap_pop ()) {
@@ -587,7 +587,7 @@ set_decorations (Context *c, gboolean decorate)
   hints.decorations = decorate ? 1 : 0;
 
   /* Set Motif hints, most window managers handle these */
-  XChangeProperty(GDK_DISPLAY(), wnck_window_get_xid (c->window),
+  XChangeProperty(gdk_x11_get_default_xdisplay (), wnck_window_get_xid (c->window),
                   my_wnck_atom_get ("_MOTIF_WM_HINTS"), 
                   my_wnck_atom_get ("_MOTIF_WM_HINTS"), 32, PropModeReplace, 
                   (unsigned char *)&hints, PROP_MOTIF_WM_HINTS_ELEMENTS);
@@ -697,7 +697,7 @@ ESExpResult *func_opacity(ESExp *f, int argc, ESExpResult **argv, Context *c) {
 	}
 	my_wnck_error_trap_push ();
 	v=0xffffffff/100*opacity;
-	XChangeProperty (GDK_DISPLAY(), wnck_window_get_xid(c->window),
+	XChangeProperty (gdk_x11_get_default_xdisplay (), wnck_window_get_xid(c->window),
 		my_wnck_atom_get ("_NET_WM_WINDOW_OPACITY"),
 		XA_CARDINAL, 32, PropModeReplace, (guchar *)&v, 1);
 

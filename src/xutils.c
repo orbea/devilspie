@@ -20,6 +20,7 @@
 #include "xutils.h"
 #include <string.h>
 #include <stdio.h>
+#include <gdk/gdkx.h>
 
 static GHashTable *atom_hash = NULL;
 static GHashTable *reverse_atom_hash = NULL;
@@ -40,7 +41,7 @@ my_wnck_atom_get (const char *atom_name)
   retval = GPOINTER_TO_UINT (g_hash_table_lookup (atom_hash, atom_name));
   if (!retval)
     {
-      retval = XInternAtom (gdk_display, atom_name, FALSE);
+      retval = XInternAtom (gdk_x11_get_default_xdisplay (), atom_name, FALSE);
 
       if (retval != None)
         {
@@ -76,7 +77,7 @@ my_wnck_change_state (Screen  *screen,
   xev.xclient.type = ClientMessage;
   xev.xclient.serial = 0;
   xev.xclient.send_event = True;
-  xev.xclient.display = gdk_display;
+  xev.xclient.display = gdk_x11_get_default_xdisplay ();
   xev.xclient.window = xwindow;
   xev.xclient.message_type = my_wnck_atom_get ("_NET_WM_STATE");
   xev.xclient.format = 32;
@@ -84,7 +85,7 @@ my_wnck_change_state (Screen  *screen,
   xev.xclient.data.l[1] = state1;
   xev.xclient.data.l[2] = state2;
 
-  XSendEvent (gdk_display,
+  XSendEvent (gdk_x11_get_default_xdisplay (),
 	      RootWindowOfScreen (screen),
               False,
 	      SubstructureRedirectMask | SubstructureNotifyMask,
@@ -100,7 +101,7 @@ my_wnck_error_trap_push (void)
 int
 my_wnck_error_trap_pop (void)
 {
-  XSync (gdk_display, False);
+  XSync (gdk_x11_get_default_xdisplay (), False);
   return gdk_error_trap_pop ();
 }
 
@@ -122,7 +123,7 @@ my_wnck_get_string_property_latin1 (Window  xwindow,
   
   my_wnck_error_trap_push ();
   property = NULL;
-  result = XGetWindowProperty (gdk_display,
+  result = XGetWindowProperty (gdk_x11_get_default_xdisplay (),
 			       xwindow, atom,
 			       0, G_MAXLONG,
 			       False, AnyPropertyType, &type, &format, &nitems,
@@ -144,7 +145,7 @@ my_wnck_get_string_property_latin1 (Window  xwindow,
       pp = (long *)property;  // we can assume (long *) since format == 32
       if (nitems == 1)
         {
-          prop_name = XGetAtomName (gdk_display, *pp);
+          prop_name = XGetAtomName (gdk_x11_get_default_xdisplay (), *pp);
           if (prop_name)
             {
               retval = g_strdup (prop_name);
@@ -157,7 +158,7 @@ my_wnck_get_string_property_latin1 (Window  xwindow,
           prop_names[nitems] = NULL;
           for (i=0; i < nitems; i++)
             {
-              prop_names[i] = XGetAtomName (gdk_display, *pp++);
+              prop_names[i] = XGetAtomName (gdk_x11_get_default_xdisplay (), *pp++);
             }
           retval = g_strjoinv (", ", prop_names);
           for (i=0; i < nitems; i++)
@@ -194,7 +195,7 @@ my_wnck_window_get_xscreen (WnckWindow *window)
    XWindowAttributes attrs;
 
    xid = wnck_window_get_xid (window);
-   XGetWindowAttributes(gdk_display, xid, &attrs);
+   XGetWindowAttributes (gdk_x11_get_default_xdisplay (), xid, &attrs);
 
    return attrs.screen;
 }
@@ -217,7 +218,7 @@ my_wnck_get_cardinal_list (Window   xwindow,
   
   my_wnck_error_trap_push ();
   type = None;
-  result = XGetWindowProperty (gdk_display,
+  result = XGetWindowProperty (gdk_x11_get_default_xdisplay (),
                               xwindow,
                               atom,
                               0, G_MAXLONG,
@@ -257,7 +258,7 @@ my_wnck_get_cardinal (Window   xwindow,
   
   my_wnck_error_trap_push ();
   type = None;
-  result = XGetWindowProperty (gdk_display,
+  result = XGetWindowProperty (gdk_x11_get_default_xdisplay (),
                               xwindow,
                               atom,
                               0, G_MAXLONG,
@@ -340,7 +341,7 @@ void my_wnck_window_set_window_type (WnckWindow *window, WnckWindowType wintype)
   }
   my_wnck_error_trap_push ();
 
-  XChangeProperty (GDK_DISPLAY(), wnck_window_get_xid(window),
+  XChangeProperty (gdk_x11_get_default_xdisplay (), wnck_window_get_xid(window),
                    my_wnck_atom_get ("_NET_WM_WINDOW_TYPE"),
                    XA_ATOM, 32, PropModeReplace, (guchar *)&atom, 1);
 
