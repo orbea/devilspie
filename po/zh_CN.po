@@ -2,25 +2,28 @@
 # Copyright (C) 2010 devilspie's COPYRIGHT HOLDER
 # This file is distributed under the same license as the devilspie package.
 # Yinghua_Wang <wantinghard@gmail.com>, 2010.
-#
+# YunQiang Su <wzssyqa@gmail.com>, 2011.
+# lainme <lainme993@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: devilspie master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=devilspie&component=general\n"
-"POT-Creation-Date: 2010-06-03 13:02+0000\n"
-"PO-Revision-Date: 2010-07-30 19:13+0800\n"
-"Last-Translator: Yinghua Wang <wantinghard@gmail.com>\n"
-"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"POT-Creation-Date: 2010-12-26 19:30+0000\n"
+"PO-Revision-Date: 2011-05-23 19:21+0800\n"
+"Last-Translator: lainme <lainme993@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../src/actions.c:46
 #, c-format
 msgid ""
-"Window Title: '%s'; Application Name: '%s'; Class: '%s'; Geometry: %dx%d+%d+%"
-"d\n"
+"Window Title: '%s'; Application Name: '%s'; Class: '%s'; Geometry: %dx%d+%d+"
+"%d\n"
 msgstr "窗口标题：%s；应用程序名称：%s；类：%s；几何属性：%dx%d+%d+%d\n"
 
 #: ../src/actions.c:90
@@ -69,9 +72,9 @@ msgid "Unsetting fullscreen\n"
 msgstr "取消全屏\n"
 
 #: ../src/actions.c:299
-#, fuzzy, c-format
+#, c-format
 msgid "Focusing\n"
-msgstr "聚焦窗口\n"
+msgstr "聚焦\n"
 
 #: ../src/actions.c:308
 #, c-format
@@ -129,19 +132,19 @@ msgid "Unsetting pinned\n"
 msgstr "取消固顶\n"
 
 #: ../src/actions.c:415
-#, fuzzy, c-format
+#, c-format
 msgid "Setting sticky\n"
-msgstr "设置粘住窗口\n"
+msgstr "粘住窗口\n"
 
 #: ../src/actions.c:424
-#, fuzzy, c-format
+#, c-format
 msgid "Unsetting sticky\n"
-msgstr "取消设置粘住窗口\n"
+msgstr "取消粘住窗口\n"
 
 #: ../src/actions.c:437
-#, fuzzy, c-format
+#, c-format
 msgid "set_workspace expects a single integer argument\n"
-msgstr "设置工作区应有惟一的整型参数\n"
+msgstr "set_workspace 应有惟一的整型参数\n"
 
 #: ../src/actions.c:447 ../src/actions.c:475
 #, c-format
@@ -154,9 +157,9 @@ msgid "Changing workspace to %d\n"
 msgstr "更改工作区为 %d\n"
 
 #: ../src/actions.c:465
-#, fuzzy, c-format
+#, c-format
 msgid "change_workspace expects a single integer argument\n"
-msgstr "更改工作区应有惟一的整型参数\n"
+msgstr "change_workspace 应有惟一的整型参数\n"
 
 #: ../src/actions.c:481
 #, c-format
@@ -164,27 +167,27 @@ msgid "Switching workspace to %d\n"
 msgstr "切换到工作区 %d\n"
 
 #: ../src/actions.c:493
-#, fuzzy, c-format
+#, c-format
 msgid "set_viewport expects a single integer argument\n"
-msgstr "设置视口应有惟一的整型参数\n"
+msgstr "set_viewport 应有惟一的整型参数\n"
 
 #: ../src/actions.c:500
-#, fuzzy, c-format
+#, c-format
 msgid "set_viewport expects an integer greater than 0\n"
-msgstr "设置视口要求一个大于0的整数\n"
+msgstr "set_viewport 要求一个大于 0 的整数\n"
 
 #: ../src/actions.c:510
-#, fuzzy, c-format
+#, c-format
 msgid "could not find current viewport\n"
 msgstr "找不到当前视口\n"
 
 #: ../src/actions.c:521
-#, fuzzy, c-format
+#, c-format
 msgid "Setting viewport failed\n"
 msgstr "设置视口失败\n"
 
 #: ../src/actions.c:525
-#, fuzzy, c-format
+#, c-format
 msgid "Changing viewport to %d\n"
 msgstr "更改视口为 %d\n"
 
@@ -196,92 +199,92 @@ msgstr "跳过任务列表\n"
 #: ../src/actions.c:543
 #, c-format
 msgid "Skipping pager\n"
-msgstr ""
+msgstr "跳过 pager\n"
 
 #: ../src/actions.c:556
 #, c-format
 msgid "Setting above\n"
-msgstr ""
+msgstr "设置到上层\n"
 
 #: ../src/actions.c:569
 #, c-format
 msgid "Setting below\n"
-msgstr ""
+msgstr "设置到下层\n"
 
 #: ../src/actions.c:612
-#, fuzzy, c-format
+#, c-format
 msgid "Removing decorations failed"
 msgstr "移除窗口装饰失败"
 
 #: ../src/actions.c:616
-#, fuzzy, c-format
+#, c-format
 msgid "Removed decorations\n"
-msgstr "移除装饰\n"
+msgstr "已移除窗口装饰\n"
 
 #: ../src/actions.c:630
-#, fuzzy, c-format
+#, c-format
 msgid "Adding decorations failed"
 msgstr "添加窗口装饰失败"
 
 #: ../src/actions.c:634
-#, fuzzy, c-format
+#, c-format
 msgid "Added decorations\n"
-msgstr "已添加窗口装饰"
+msgstr "已添加窗口装饰\n"
 
 #: ../src/actions.c:649
-#, fuzzy, c-format
+#, c-format
 msgid "wintype expects a single string argument\n"
 msgstr "wintype 应有惟一的字符串参数\n"
 
 #: ../src/actions.c:671
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown window type '%s'"
 msgstr "未知的窗口类型 '%s'"
 
 #: ../src/actions.c:677
-#, fuzzy, c-format
+#, c-format
 msgid "Set wintype\n"
 msgstr "设置 wintype\n"
 
 #: ../src/actions.c:690
-#, fuzzy, c-format
+#, c-format
 msgid "opacity expects a single integer argument\n"
-msgstr "透明度应有惟一的整型参数\n"
+msgstr "opacity 应有惟一的整型参数\n"
 
 #: ../src/actions.c:695
-#, fuzzy, c-format
+#, c-format
 msgid "opacity expects a single integer argument between 0 and 100\n"
-msgstr "透明度应有惟一的介于0和100之间的整型参数\n"
+msgstr "opacity 应有惟一的介于 0 和 100 之间的整型参数\n"
 
 #: ../src/actions.c:725
 #, c-format
 msgid "spawn_sync(string)\n"
-msgstr ""
+msgstr "spawn_sync(字符串)\n"
 
 #: ../src/actions.c:727
 #, c-format
 msgid "spawn_sync: Command parameter is not a string"
-msgstr ""
+msgstr "spawn_sync：命令参数不是字符串"
 
 #: ../src/actions.c:740
 #, c-format
 msgid "spawn_sync(list)\n"
-msgstr ""
+msgstr "spawn_sync(列表)\n"
 
 #: ../src/actions.c:747
 #, c-format
 msgid "spawn_sync: Command parameter %d is not a string"
-msgstr ""
+msgstr "spawn_sync：命令参数 %d 不是字符串"
 
 #: ../src/actions.c:764
 #, c-format
 msgid "Error spawning child process (fg): %s\n"
-msgstr ""
+msgstr "引发子进程(前台)时出现错误：%s\n"
 
 #: ../src/actions.c:766
 #, c-format
 msgid "Error spawning child process (fg).\n"
-msgstr ""
+msgstr "引发子进程(前台)时出现错误。\n"
 
 #: ../src/actions.c:769
 #, c-format
@@ -291,37 +294,37 @@ msgstr "警告：子进程返回了 %d\n"
 #: ../src/actions.c:793
 #, c-format
 msgid "spawn_async(string)\n"
-msgstr ""
+msgstr "spawn_async(字符串)\n"
 
 #: ../src/actions.c:795
 #, c-format
 msgid "spawn_async: Command parameter is not a string"
-msgstr ""
+msgstr "spawn_async：命令参数不是字符串"
 
 #: ../src/actions.c:807
 #, c-format
 msgid "spawn_async(list)\n"
-msgstr ""
+msgstr "spawn_async(列表)\n"
 
 #: ../src/actions.c:814
 #, c-format
 msgid "spawn_async: Command parameter %d is not a string"
-msgstr ""
+msgstr "spawn_async：命令参数 %d 不是字符串"
 
 #: ../src/actions.c:827
 #, c-format
 msgid "Spawned pid %u (bg)\n"
-msgstr ""
+msgstr "引发 PID %u (后台)\n"
 
 #: ../src/actions.c:833
 #, c-format
 msgid "Error spawning child process (bg): %s\n"
-msgstr ""
+msgstr "引发子进程(后台)时出现错误：%s\n"
 
 #: ../src/actions.c:835
 #, c-format
 msgid "Error spawning child process (bg).\n"
-msgstr ""
+msgstr "引发子进程(后台)时出现错误。\n"
 
 #: ../src/actions.c:846
 #, c-format
@@ -343,60 +346,57 @@ msgstr "要使用的配置文件"
 #: ../src/devilspie.c:124
 #, c-format
 msgid "Devil's Pie %s starting...\n"
-msgstr ""
+msgstr "Devil's Pie %s 正在启动...\n"
 
 #: ../src/devilspie.c:140
 #, c-format
 msgid "No s-expressions loaded, quiting\n"
-msgstr ""
+msgstr "没有符号表达式载入，正在退出\n"
 
 #: ../src/e-sexp.c:271
-#, fuzzy
 msgid "Invalid types in AND"
 msgstr "AND 中的类型错误"
 
 #: ../src/e-sexp.c:327
-#, fuzzy
 msgid "Invalid types in OR"
 msgstr "OR 中的类型错误"
 
 #: ../src/e-sexp.c:389
-#, fuzzy
 msgid "Incompatible types in compare <"
 msgstr "< 比较中的类型不兼容"
 
 #: ../src/e-sexp.c:421
-#, fuzzy
 msgid "Incompatible types in compare >"
 msgstr "> 比较中的类型不兼容"
 
 #: ../src/e-sexp.c:483
 msgid "Invalid types in (+ ints)"
-msgstr ""
+msgstr "无效的类型于(+ ints)"
 
 #: ../src/e-sexp.c:495
 msgid "Invalid types in (+ strings)"
-msgstr ""
+msgstr "无效的类型于(+ strings)"
 
 #: ../src/e-sexp.c:511
 msgid "Invalid types in (+ time_t)"
-msgstr ""
+msgstr "无效的类型于(+ time_t)"
 
 #: ../src/e-sexp.c:544
 msgid "Invalid types in -"
-msgstr ""
+msgstr "无效的类型于 -"
 
 #: ../src/e-sexp.c:559
 msgid "Invalid types in (- time_t)"
-msgstr ""
+msgstr "无效的类型于(- time_t)"
 
 #: ../src/e-sexp.c:582
 msgid "Incorrect argument count to (int )"
 msgstr ""
 
 #: ../src/e-sexp.c:597
+#, fuzzy
 msgid "Invalid type in (cast-int )"
-msgstr ""
+msgstr "无效的类型于(cast-int )"
 
 #: ../src/e-sexp.c:610
 msgid "Incorrect argument count to (cast-string )"
@@ -404,12 +404,12 @@ msgstr ""
 
 #: ../src/e-sexp.c:625
 msgid "Invalid type in (int )"
-msgstr ""
+msgstr "无效的类型于(int )"
 
 #: ../src/e-sexp.c:718
 #, c-format
 msgid "Unknown type in parse tree: %d"
-msgstr ""
+msgstr "分析树中的未知类型：%d"
 
 #: ../src/e-sexp.c:908
 msgid "Invalid format for a integer value"
@@ -420,19 +420,19 @@ msgid "Invalid format for a boolean value"
 msgstr "布尔值的格式不对"
 
 #: ../src/e-sexp.c:955
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid symbol type: %s: %d"
 msgstr "无效的符号类型：%s：%d"
 
 #: ../src/e-sexp.c:959 ../src/e-sexp.c:1004
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown identifier: %s"
 msgstr "未知的标识符：%s"
 
 #: ../src/e-sexp.c:965 ../src/e-sexp.c:1007
 #, c-format
 msgid "Unexpected token encountered: %d"
-msgstr ""
+msgstr "遇到意外的标记：%d"
 
 #: ../src/e-sexp.c:1000
 #, c-format
@@ -448,17 +448,17 @@ msgid "Missing '('"
 msgstr "缺少 '('"
 
 #: ../src/logical.c:38
-#, fuzzy, c-format
+#, c-format
 msgid "is expects two string arguments\n"
 msgstr "is 应有两个字符串参数\n"
 
 #: ../src/logical.c:55
-#, fuzzy, c-format
+#, c-format
 msgid "contains expects two string arguments\n"
 msgstr "contains 应有两个字符串参数\n"
 
 #: ../src/logical.c:76
-#, fuzzy, c-format
+#, c-format
 msgid "matches expects two string arguments\n"
 msgstr "matches 应有两个字符串参数\n"
 
@@ -468,7 +468,7 @@ msgid "Invalid regular expression '%s': %s"
 msgstr "无效的正则表达式 '%s'：%s"
 
 #: ../src/matchers.c:100
-#, fuzzy, c-format
+#, c-format
 msgid "window_property expects one string argument\n"
 msgstr "window_property 应有一个字符串参数\n"
 
