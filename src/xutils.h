@@ -26,7 +26,7 @@
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
 
-#include "libwnck/window.h"
+#include <libwnck/libwnck.h>
 
 G_BEGIN_DECLS
 

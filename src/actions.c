@@ -17,10 +17,7 @@
  */
 
 #include <config.h>
-#include <libwnck/application.h>
-#include <libwnck/class-group.h>
-#include <libwnck/workspace.h>
-#include <libwnck/window.h>
+#include <libwnck/libwnck.h>
 #include <glib.h>
 #include <glib/gi18n.h>
 #include "e-sexp.h"

@@ -16,9 +16,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <libwnck/application.h>
-#include <libwnck/class-group.h>
-#include <libwnck/window.h>
+#include <libwnck/libwnck.h>
 #include <glib.h>
 #include <glib/gi18n.h>
 #include "e-sexp.h"
