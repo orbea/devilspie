@@ -24,6 +24,7 @@
 #include <glib.h>
 #include <glib/gi18n.h>
 #include <libwnck/libwnck.h>
+#include <gdk/gdkx.h>
 #include "e-sexp.h"
 #include "devilspie.h"
 #include "parser.h"
@@ -119,7 +120,18 @@ int main(int argc, char **argv) {
   /* Parse the arguments */
   context = g_option_context_new ("- Devil's Pie " VERSION);
   g_option_context_add_main_entries (context, options, GETTEXT_PACKAGE);
-  g_option_context_parse (context, &argc, &argv, &error);
+  if (!g_option_context_parse (context, &argc, &argv, &error)) {
+    g_printerr (_("Failed to parse arguments: %s\n"), error->message);
+    g_error_free (error);
+    g_option_context_free (context);
+    return 1;
+  }
+  g_option_context_free (context);
+
+  if (!GDK_IS_X11_DISPLAY (gdk_display_get_default ())) {
+    g_printerr ("Not an X11 display.\n");
+    return 1;
+  }
 
   if (debug) g_printerr(_("Devil's Pie %s starting...\n"), VERSION);
 
