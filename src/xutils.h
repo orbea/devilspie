@@ -48,12 +48,6 @@ glong my_wnck_get_cardinal (Window xwindow, Atom atom);
 
 int my_wnck_get_viewport_start (WnckWindow *win);
 
-#if ! HAVE_SET_WINDOW_TYPE
-/* Old libwnck doesn't have this, so possibly declare it */
-void my_wnck_window_set_window_type (WnckWindow *window, WnckWindowType wintype);
-#define wnck_window_set_window_type(a, b) my_wnck_window_set_window_type(a, b)
-#endif
-
 G_END_DECLS
 
 #endif /* WNCK_XUTILS_H */

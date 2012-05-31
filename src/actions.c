@@ -291,11 +291,7 @@ ESExpResult *func_unfullscreen(ESExp *f, int argc, ESExpResult **argv, Context *
  * Focus the current window.
  */
 ESExpResult *func_focus(ESExp *f, int argc, ESExpResult **argv, Context *c) {
-#if NEED_TIMESTAMPS
   wnck_window_activate (c->window, GDK_CURRENT_TIME);
-#else
-  wnck_window_activate (c->window);
-#endif
   if (debug) g_printerr (_("Focusing\n"));
   return e_sexp_result_new_bool (f, TRUE);
 }
@@ -349,11 +345,7 @@ ESExpResult *func_minimize(ESExp *f, int argc, ESExpResult **argv, Context *c) {
  * Un-minimise (i.e. restore) the current window.
  */
 ESExpResult *func_unminimize(ESExp *f, int argc, ESExpResult **argv, Context *c) {
-#if NEED_TIMESTAMPS
   wnck_window_unminimize (c->window, GDK_CURRENT_TIME);
-#else
-  wnck_window_unminimize (c->window);
-#endif
   if (debug) g_printerr(_("Un-minimising\n"));
   return e_sexp_result_new_bool (f, TRUE);
 }
@@ -380,11 +372,7 @@ ESExpResult *func_unshade(ESExp *f, int argc, ESExpResult **argv, Context *c) {
  * Close the current window.
  */
 ESExpResult *func_close(ESExp *f, int argc, ESExpResult **argv, Context *c) {
-#if NEED_TIMESTAMPS
   wnck_window_close (c->window, GDK_CURRENT_TIME);
-#else
-  wnck_window_close (c->window);
-#endif
   if (debug) g_printerr(_("Closed\n"));
   return e_sexp_result_new_bool (f, TRUE);
 }
