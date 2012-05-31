@@ -1,12 +1,10 @@
 # Initial blurb
 AC_PREREQ(2.52)
-AC_INIT(devilspie, 0.22, http://www.burtonini.com/)
+AC_INIT([devilspie],[0.22],[http://www.burtonini.com/])
 AC_CONFIG_SRCDIR(src/devilspie.c)
-AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
-AM_CONFIG_HEADER(src/config.h)
-
-# Honor aclocal flags
-ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"
+AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz])
+AM_SILENT_RULES([yes])
+AC_CONFIG_HEADERS([src/config.h])
 
 # Do the gettext/i18n stuff
 GETTEXT_PACKAGE=devilspie
@@ -18,8 +16,7 @@ AM_PROG_CC_STDC
 
 GNOME_COMPILE_WARNINGS(yes)
 
-AC_PROG_INTLTOOL([0.20])
-ALL_LINGUAS="de"
+AC_PROG_INTLTOOL([0.40.0])
 AM_GLIB_GNU_GETTEXT
 
 # Check that we actually have the libraries required to build
