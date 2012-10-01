@@ -1,3 +1,11 @@
+Devil's Pie "All Twisted Metal Stretching Upwards" 0.23
+=======================================================
+
+* Port to libwnck3 (Christian Persch)
+* Add unfullscreen action (Mathias Dalh)
+* Remove exec action (deprecated by spawn)
+
+
 Devil's Pie "Sweet Music, Soul Music?" 0.22
 ===========================================
 
