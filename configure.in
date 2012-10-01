@@ -1,6 +1,6 @@
 # Initial blurb
 AC_PREREQ(2.52)
-AC_INIT([devilspie],[0.22],[http://www.burtonini.com/])
+AC_INIT([devilspie],[0.23],[http://www.burtonini.com/])
 AC_CONFIG_SRCDIR(src/devilspie.c)
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz])
 AM_SILENT_RULES([yes])
