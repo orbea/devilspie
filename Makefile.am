@@ -5,9 +5,7 @@ ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
 man_MANS = devilspie.1
 
 EXTRA_DIST = \
-	autogen.sh \
 	devilspie.spec.in devilspie.spec \
-	$(addsuffix .in, $(INTLTOOL_BUILT)) \
 	$(man_MANS)
 
 INTLTOOL_BUILT = \
