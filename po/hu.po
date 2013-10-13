@@ -1,0 +1,514 @@
+# Hungarian translation for devilspie.
+# Copyright (C) 2013 devilspie's COPYRIGHT HOLDER
+# This file is distributed under the same license as the devilspie package.
+#
+# Balázs Úr <urbalazs at gmail dot com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: devilspie master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=devilspie&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-10-09 23:09+0000\n"
+"PO-Revision-Date: 2013-10-13 14:39+0200\n"
+"Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
+"Language-Team: Hungarian <gnome-hu-list@gnome.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: ../src/actions.c:43
+#, c-format
+msgid ""
+"Window Title: '%s'; Application Name: '%s'; Class: '%s'; Geometry: %dx%d+%d+"
+"%d\n"
+msgstr ""
+"Ablakcím: „%s”; Alkalmazásnév: „%s”; Osztály: „%s”; Geometria: %dx%d+%d+%d\n"
+
+#: ../src/actions.c:87
+#, c-format
+msgid "(array pointer: %p)"
+msgstr "(tömb mutató: %p)"
+
+#: ../src/actions.c:93
+#, c-format
+msgid "Cannot convert element into a string"
+msgstr "Nem lehet elemet szöveggé konvertálni"
+
+#: ../src/actions.c:211
+#, c-format
+msgid "Setting geometry '%s' failed\n"
+msgstr "„%s” geometria beállítása nem sikerült\n"
+
+#: ../src/actions.c:217
+#, c-format
+msgid "Setting geometry '%s'\n"
+msgstr "„%s” geometria beállítása\n"
+
+#: ../src/actions.c:240
+#, c-format
+msgid "Cannot get workspace\n"
+msgstr "Nem sikerült lekérni a munkaterületet\n"
+
+#: ../src/actions.c:258
+#, c-format
+msgid "Centering '%s' failed\n"
+msgstr "„%s” központosítása nem sikerült\n"
+
+#: ../src/actions.c:263
+#, c-format
+msgid "Centering\n"
+msgstr "Központosítás\n"
+
+#: ../src/actions.c:273
+#, c-format
+msgid "Setting fullscreen\n"
+msgstr "Teljes képernyő beállítása\n"
+
+#: ../src/actions.c:283
+#, c-format
+msgid "Unsetting fullscreen\n"
+msgstr "Teljes képernyő elhagyása\n"
+
+#: ../src/actions.c:292
+#, c-format
+msgid "Focusing\n"
+msgstr "Fókuszálás\n"
+
+#: ../src/actions.c:301
+#, c-format
+msgid "Maximising\n"
+msgstr "Maximalizálás\n"
+
+#: ../src/actions.c:310
+#, c-format
+msgid "Maximising vertically\n"
+msgstr "Maximalizálás függőlegesen\n"
+
+#: ../src/actions.c:319
+#, c-format
+msgid "Maximising horizontally\n"
+msgstr "Maximalizálás vízszintesen\n"
+
+#: ../src/actions.c:328
+#, c-format
+msgid "Un-maximising\n"
+msgstr "Maximalizálás megszüntetése\n"
+
+#: ../src/actions.c:337
+#, c-format
+msgid "Minimising\n"
+msgstr "Minimalizálás\n"
+
+#: ../src/actions.c:346
+#, c-format
+msgid "Un-minimising\n"
+msgstr "Minimalizálás megszüntetése\n"
+
+#: ../src/actions.c:355
+#, c-format
+msgid "Shaded\n"
+msgstr "Felgördítve\n"
+
+#: ../src/actions.c:364
+#, c-format
+msgid "Unshaded\n"
+msgstr "Felgördítés megszüntetése\n"
+
+#: ../src/actions.c:373
+#, c-format
+msgid "Closed\n"
+msgstr "Bezárt\n"
+
+#: ../src/actions.c:382
+#, c-format
+msgid "Setting pinned\n"
+msgstr "Rögzített beállítása\n"
+
+#: ../src/actions.c:391
+#, c-format
+msgid "Unsetting pinned\n"
+msgstr "Rögzített beállításának megszüntetése\n"
+
+#: ../src/actions.c:400
+#, c-format
+msgid "Setting sticky\n"
+msgstr "Ragadós beállítása\n"
+
+#: ../src/actions.c:409
+#, c-format
+msgid "Unsetting sticky\n"
+msgstr "Ragadós beállításának megszüntetése\n"
+
+#: ../src/actions.c:422
+#, c-format
+msgid "set_workspace expects a single integer argument\n"
+msgstr "A set_workspace egy egyedüli egész paramétert vár\n"
+
+#: ../src/actions.c:432 ../src/actions.c:460
+#, c-format
+msgid "Workspace number %d does not exist"
+msgstr "A(z) %d munkaterület szám nem létezik"
+
+#: ../src/actions.c:436
+#, c-format
+msgid "Changing workspace to %d\n"
+msgstr "Munkaterület módosítása erre: %d\n"
+
+#: ../src/actions.c:450
+#, c-format
+msgid "change_workspace expects a single integer argument\n"
+msgstr "A change_workspace egy egyedüli egész paramétert vár\n"
+
+#: ../src/actions.c:466
+#, c-format
+msgid "Switching workspace to %d\n"
+msgstr "Munkaterület váltása erre: %d\n"
+
+#: ../src/actions.c:478
+#, c-format
+msgid "set_viewport expects a single integer argument\n"
+msgstr "A set_viewport egy egyedüli egész paramétert vár\n"
+
+#: ../src/actions.c:485
+#, c-format
+msgid "set_viewport expects an integer greater than 0\n"
+msgstr "A set_viewport egy 0-nál nagyobb egészt vár\n"
+
+#: ../src/actions.c:495
+#, c-format
+msgid "could not find current viewport\n"
+msgstr "nem található a jelenlegi nézetmező\n"
+
+#: ../src/actions.c:506
+#, c-format
+msgid "Setting viewport failed\n"
+msgstr "A nézetmező beállítása nem sikerült\n"
+
+#: ../src/actions.c:510
+#, c-format
+msgid "Changing viewport to %d\n"
+msgstr "Nézetmező módosítása erre: %d\n"
+
+#: ../src/actions.c:519
+#, c-format
+msgid "Skipping tasklist\n"
+msgstr "Feladatlista kihagyása\n"
+
+#: ../src/actions.c:528
+#, c-format
+msgid "Skipping pager\n"
+msgstr "Lapozó kihagyása\n"
+
+#: ../src/actions.c:541
+#, c-format
+msgid "Setting above\n"
+msgstr "Beállítás fent\n"
+
+#: ../src/actions.c:554
+#, c-format
+msgid "Setting below\n"
+msgstr "Beállítás lent\n"
+
+#: ../src/actions.c:597
+#, c-format
+msgid "Removing decorations failed"
+msgstr "A díszítések eltávolítása nem sikerült"
+
+#: ../src/actions.c:601
+#, c-format
+msgid "Removed decorations\n"
+msgstr "Eltávolított díszítések\n"
+
+#: ../src/actions.c:615
+#, c-format
+msgid "Adding decorations failed"
+msgstr "A díszítések hozzáadása nem sikerült"
+
+#: ../src/actions.c:619
+#, c-format
+msgid "Added decorations\n"
+msgstr "Hozzáadott díszítések\n"
+
+#: ../src/actions.c:634
+#, c-format
+msgid "wintype expects a single string argument\n"
+msgstr "A wintype egy egyedüli szöveg paramétert vár\n"
+
+#: ../src/actions.c:656
+#, c-format
+msgid "Unknown window type '%s'"
+msgstr "Ismeretlen ablaktípus: „%s”"
+
+#: ../src/actions.c:662
+#, c-format
+msgid "Set wintype\n"
+msgstr "Ablaktípus beállítása\n"
+
+#: ../src/actions.c:675
+#, c-format
+msgid "opacity expects a single integer argument\n"
+msgstr "Az opacity egy egyedüli egész paramétert vár\n"
+
+#: ../src/actions.c:680
+#, c-format
+msgid "opacity expects a single integer argument between 0 and 100\n"
+msgstr "Az opacity egy egyedüli egész paramétert vár 0 és 100 között\n"
+
+#: ../src/actions.c:710
+#, c-format
+msgid "spawn_sync(string)\n"
+msgstr "spawn_sync(szöveg)\n"
+
+#: ../src/actions.c:712
+#, c-format
+msgid "spawn_sync: Command parameter is not a string"
+msgstr "spawn_sync: A parancs paramétere nem szöveg"
+
+#: ../src/actions.c:725
+#, c-format
+msgid "spawn_sync(list)\n"
+msgstr "spawn_sync(lista)\n"
+
+#: ../src/actions.c:732
+#, c-format
+msgid "spawn_sync: Command parameter %d is not a string"
+msgstr "spawn_sync: A parancs %d. paramétere nem szöveg"
+
+#: ../src/actions.c:749
+#, c-format
+msgid "Error spawning child process (fg): %s\n"
+msgstr "Hiba a gyermekfolyamat (fg) indításakor: %s\n"
+
+#: ../src/actions.c:751
+#, c-format
+msgid "Error spawning child process (fg).\n"
+msgstr "Hiba a gyermekfolyamat (fg) indításakor.\n"
+
+#: ../src/actions.c:754
+#, c-format
+msgid "Warning: child process returned %d\n"
+msgstr "Figyelem: a gyermekfolyamat visszatérése: %d\n"
+
+#: ../src/actions.c:778
+#, c-format
+msgid "spawn_async(string)\n"
+msgstr "spawn_async(szöveg)\n"
+
+#: ../src/actions.c:780
+#, c-format
+msgid "spawn_async: Command parameter is not a string"
+msgstr "spawn_async: A parancs paramétere nem szöveg"
+
+#: ../src/actions.c:792
+#, c-format
+msgid "spawn_async(list)\n"
+msgstr "spawn_async(lista)\n"
+
+#: ../src/actions.c:799
+#, c-format
+msgid "spawn_async: Command parameter %d is not a string"
+msgstr "spawn_async: A parancs %d. paramétere nem szöveg"
+
+#: ../src/actions.c:812
+#, c-format
+msgid "Spawned pid %u (bg)\n"
+msgstr "Indított pid %u (bg)\n"
+
+#: ../src/actions.c:818
+#, c-format
+msgid "Error spawning child process (bg): %s\n"
+msgstr "Hiba a gyermekfolyamat (bg) indításakor: %s\n"
+
+#: ../src/actions.c:820
+#, c-format
+msgid "Error spawning child process (bg).\n"
+msgstr "Hiba a gyermekfolyamat (bg) indításakor.\n"
+
+#: ../src/actions.c:831
+#, c-format
+msgid "Quiting...\n"
+msgstr "Kilépés…\n"
+
+#: ../src/devilspie.c:103
+msgid "Apply to all existing windows instead of just new windows."
+msgstr "Alkalmazás minden létező ablakra csak az új ablakok helyett."
+
+#: ../src/devilspie.c:104
+msgid "Output debug information"
+msgstr "Hibakeresési információk kiírása"
+
+#: ../src/devilspie.c:105
+msgid "Configuration files to use"
+msgstr "Használandó beállítófájlok"
+
+#: ../src/devilspie.c:124
+#, c-format
+msgid "Failed to parse arguments: %s\n"
+msgstr "A paraméterek feldolgozása meghiúsult: %s\n"
+
+#: ../src/devilspie.c:136
+#, c-format
+msgid "Devil's Pie %s starting...\n"
+msgstr "Devil's Pie %s indítása…\n"
+
+#: ../src/devilspie.c:152
+#, c-format
+msgid "No s-expressions loaded, quiting\n"
+msgstr "Nincsenek s-kifejezések betöltve, kilépés\n"
+
+#: ../src/e-sexp.c:273
+msgid "Invalid types in AND"
+msgstr "Érvénytelen típusok az AND részben"
+
+#: ../src/e-sexp.c:329
+msgid "Invalid types in OR"
+msgstr "Érvénytelen típusok az OR részben"
+
+#: ../src/e-sexp.c:391
+msgid "Incompatible types in compare <"
+msgstr "Nem kompatibilis típusok a < összehasonlításban"
+
+#: ../src/e-sexp.c:423
+msgid "Incompatible types in compare >"
+msgstr "Nem kompatibilis típusok a > összehasonlításban"
+
+#: ../src/e-sexp.c:485
+msgid "Invalid types in (+ ints)"
+msgstr "Érvénytelen típusok ebben: (+ egészek)"
+
+#: ../src/e-sexp.c:497
+msgid "Invalid types in (+ strings)"
+msgstr "Érvénytelen típusok ebben: (+ szövegek)"
+
+#: ../src/e-sexp.c:513
+msgid "Invalid types in (+ time_t)"
+msgstr "Érvénytelen típusok ebben: (+ time_t)"
+
+#: ../src/e-sexp.c:546
+msgid "Invalid types in -"
+msgstr "Érvénytelen típusok ebben: -"
+
+#: ../src/e-sexp.c:561
+msgid "Invalid types in (- time_t)"
+msgstr "Érvénytelen típusok ebben: (- time_t)"
+
+#: ../src/e-sexp.c:584
+msgid "Incorrect argument count to (int )"
+msgstr "Hibás paraméterszám ehhez: (int )"
+
+#: ../src/e-sexp.c:599
+msgid "Invalid type in (cast-int )"
+msgstr "Érvénytelen típus ebben: (cast-int )"
+
+#: ../src/e-sexp.c:612
+msgid "Incorrect argument count to (cast-string )"
+msgstr "Hibás paraméterszám ehhez: (cast-string )"
+
+#: ../src/e-sexp.c:627
+msgid "Invalid type in (int )"
+msgstr "Érvénytelen típus ebben: (int )"
+
+#: ../src/e-sexp.c:720
+#, c-format
+msgid "Unknown type in parse tree: %d"
+msgstr "Ismereten típus a feldolgozási fában: %d"
+
+#: ../src/e-sexp.c:910
+msgid "Invalid format for a integer value"
+msgstr "Érvénytelen formátum egy egész értékhez"
+
+#: ../src/e-sexp.c:926 ../src/e-sexp.c:934
+msgid "Invalid format for a boolean value"
+msgstr "Érvénytelen formátum egy logikai értékhez"
+
+#: ../src/e-sexp.c:957
+#, c-format
+msgid "Invalid symbol type: %s: %d"
+msgstr "Érvénytelen szimbólum típus: %s: %d"
+
+#: ../src/e-sexp.c:961 ../src/e-sexp.c:1006
+#, c-format
+msgid "Unknown identifier: %s"
+msgstr "Ismeretlen azonosító: %s"
+
+#: ../src/e-sexp.c:967 ../src/e-sexp.c:1009
+#, c-format
+msgid "Unexpected token encountered: %d"
+msgstr "Nem várt token érkezett: %d"
+
+#: ../src/e-sexp.c:1002
+#, c-format
+msgid "Trying to call variable as function: %s"
+msgstr "Változó meghívásának kísérlete függvényként: %s"
+
+#: ../src/e-sexp.c:1013
+msgid "Missing ')'"
+msgstr "Hiányzó „)”"
+
+#: ../src/e-sexp.c:1016
+msgid "Missing '('"
+msgstr "Hiányzó „(”"
+
+#: ../src/logical.c:38
+#, c-format
+msgid "is expects two string arguments\n"
+msgstr "két szöveg paramétert vár\n"
+
+#: ../src/logical.c:55
+#, c-format
+msgid "contains expects two string arguments\n"
+msgstr "két szöveg paramétert tartalmazót vár\n"
+
+#: ../src/logical.c:76
+#, c-format
+msgid "matches expects two string arguments\n"
+msgstr "két szöveg paraméterre illeszkedőt vár\n"
+
+#: ../src/logical.c:87
+#, c-format
+msgid "Invalid regular expression '%s': %s"
+msgstr "Érvénytelen reguláris kifejezés: „%s”: %s"
+
+#: ../src/matchers.c:98
+#, c-format
+msgid "window_property expects one string argument\n"
+msgstr "A window_property egy szöveg paramétert vár\n"
+
+#: ../src/parser.c:106 ../src/parser.c:175
+#, c-format
+msgid "Loading %s\n"
+msgstr "%s betöltése\n"
+
+#: ../src/parser.c:109
+#, c-format
+msgid "%s is not a normal file, skipping\n"
+msgstr "%s nem normál fájl, kihagyás\n"
+
+#: ../src/parser.c:115
+#, c-format
+msgid "Cannot open %s\n"
+msgstr "%s nem nyitható meg\n"
+
+#: ../src/parser.c:149
+#, c-format
+msgid "Cannot parse %s: %s\n"
+msgstr "%s nem dolgozható fel: %s\n"
+
+#: ../src/parser.c:178
+#, c-format
+msgid "%s doesn't exist\n"
+msgstr "%s nem létezik\n"
+
+#: ../src/parser.c:183
+#, c-format
+msgid "%s isn't a directory\n"
+msgstr "%s nem könyvtár\n"
+
+#: ../src/parser.c:189
+#, c-format
+msgid "Cannot open %s: %s\n"
+msgstr "%s nem nyitható meg: %s\n"
+
